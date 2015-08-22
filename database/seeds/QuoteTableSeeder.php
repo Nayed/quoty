@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 
 class QuoteTableSeeder extends Seeder
 {
-    public funcion run()
+    public function run()
     {
         Quote::create([
             'text' => 'Success is going from failure to failure without losing your enthusiasm',
