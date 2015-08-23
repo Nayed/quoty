@@ -40,7 +40,7 @@ $app->get('/', function() use ($app) {
 /**
  *  Dispplay a specific quote
  */
-$app->get('/{id', function($id) use ($app) {
+$app->get('/{id}', function($id) use ($app) {
     $quote = Quote::query()->findOrFail($id);
     return view('quote', compact('quote'));
 });
